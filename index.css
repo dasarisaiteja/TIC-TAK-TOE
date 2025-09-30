@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 2rem;
+    color: #333;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.msg_box {
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(55, 76, 216, 0.1);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.msg_box.show {
+    display: flex;
+}
+
+.winner_msg {
+    font-size: 1.3rem;
+    color: #4e73df;
+    margin-bottom: 0.7rem;
+}
+
+.msg_box button {
+    background: #4e73df;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.msg_box button:hover {
+    background: #2e59d9;
+}
+
+.bord {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.cell {
+    background: #f7f9ff;
+    border: 2px solid #c3cfe3;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: #384fde;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+}
+
+.cell:hover {
+    background: #e2e7fa;
+}
